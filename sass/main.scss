@@ -1,0 +1,72 @@
+@import "compass/css3/box-shadow";
+@import "compass/css3/box";
+
+@font-face {
+  font-family: fontawesome-webfont;
+  src: url(../font/fontawesome-webfont.ttf) format("truetype");
+}
+
+body {
+  background: #EEEEEE;
+  color: #8F8F8F;
+}
+
+a {
+  color: #8F8F8F;
+}
+
+@mixin line-bottom($black: .1, $white: .5) {
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  @include box-shadow(rgba(255,255,255,1)0 1px 0);
+}
+
+header {
+  display: block;
+  width: 100%;
+  @include line-bottom;
+}
+
+.header {
+  display: block;
+  margin: 12px auto;
+  width: 85%;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 14px;
+  margin: 0;
+}
+
+.profile {
+  @include display-box;
+  margin: 20px;
+  text-align: center;
+}
+
+.info {
+  margin: 0px auto;
+}
+
+.social {
+  @include display-box;
+  font-family: "fontawesome-webfont";
+  font-size: 20px;
+}
+
+.social ul {
+  margin: 0 auto;
+  list-style: none;
+  padding: 0;
+}
+
+.social li {
+  display: inline;
+  padding-right: 10px;
+}
+
+.social a {
+  text-decoration: none;
+  color: #6B6B6B;
+}
+
